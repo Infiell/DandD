@@ -1,0 +1,54 @@
+﻿<Window x:Class="DandD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DandD"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="D and D" Height="800
+        " Width="1600" Background="{x:Null}" Foreground="{x:Null}" Icon="/Reference/icon.png">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFB98B8B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image Margin="36,10,36,665" Source="/Reference/logo.png"/>
+        <Image Margin="37,124,1333,291" Source="/Reference/charAssasin.png" Stretch="Fill"/>
+        <Label Content="Character LVL" HorizontalAlignment="Left" Margin="537,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="575,150,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="76" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,524,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FFFF0B0B" LargeChange="0" Value="15"/>
+        <Label Content="HP" HorizontalAlignment="Left" Margin="135,498,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Manapul" HorizontalAlignment="Left" Margin="107,552,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,578,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FF1B6BB5" LargeChange="0" Value="15"/>
+        <Label Content="Stamina" HorizontalAlignment="Left" Margin="107,606,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,632,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FF1BB53A" LargeChange="0" Value="15"/>
+        <Label Content="15/100" HorizontalAlignment="Left" Margin="112,521,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="15/100" HorizontalAlignment="Left" Margin="112,575,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="15/100" HorizontalAlignment="Left" Margin="112,630,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Button Content="Import to PDF" HorizontalAlignment="Left" Margin="10,728,0,0" VerticalAlignment="Top" Height="25" Width="96" Background="White" BorderBrush="#FF080000" FontFamily="EuropeExt" FontSize="10" Click="Button_Click"/>
+        <Label Content="Strength" HorizontalAlignment="Left" Margin="400,178,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Constitution" HorizontalAlignment="Left" Margin="400,209,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Dexterity" HorizontalAlignment="Left" Margin="400,240,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Intelligence" HorizontalAlignment="Left" Margin="400,271,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Wisdom" HorizontalAlignment="Left" Margin="400,302,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Charisma" HorizontalAlignment="Left" Margin="400,333,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,181,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,211,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,242,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,273,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,304,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,333,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="712,150,0,0" TextWrapping="Wrap" Text="+1" VerticalAlignment="Top" Width="78" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <Label Content="Points" HorizontalAlignment="Left" Margin="714,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="74"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,327,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Charisma" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,297,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Wisdom" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,271,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Intelligence" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold" RenderTransformOrigin="0.655,-0.085"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,240,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Dexterity" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,208,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Constitution" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,178,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Strength" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="645,150,0,0" VerticalAlignment="Top" Height="23" Width="28" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_LVL" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
+    </Grid>
+</Window>
