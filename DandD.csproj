@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Reference\charArcher.png" />
+    <None Remove="Reference\charAssasin.png" />
+    <None Remove="Reference\icon.png" />
+    <None Remove="Reference\logo.png" />
+    <None Remove="Reference\pngwing.com.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Reference\charArcher.png" />
+    <Resource Include="Reference\charAssasin.png" />
+    <Resource Include="Reference\icon.png" />
+    <Resource Include="Reference\logo.png" />
+  </ItemGroup>
+
+</Project>
