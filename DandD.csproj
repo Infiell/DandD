@@ -9,16 +9,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Reference\charArcher.png" />
     <None Remove="Reference\charAssasin.png" />
+    <None Remove="Reference\charHealer.png" />
+    <None Remove="Reference\charMage.png" />
+    <None Remove="Reference\charTank.png" />
+    <None Remove="Reference\charWarrior.png" />
     <None Remove="Reference\icon.png" />
     <None Remove="Reference\logo.png" />
     <None Remove="Reference\pngwing.com.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Reference\charArcher.png" />
     <Resource Include="Reference\charAssasin.png" />
+    <Resource Include="Reference\charHealer.png" />
+    <Resource Include="Reference\charMage.png" />
+    <Resource Include="Reference\charTank.png" />
+    <Resource Include="Reference\charWarrior.png" />
     <Resource Include="Reference\icon.png" />
     <Resource Include="Reference\logo.png" />
   </ItemGroup>

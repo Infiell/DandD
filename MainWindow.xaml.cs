@@ -25,15 +25,6 @@ namespace DandD
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            PrintDialog printDialog = new PrintDialog();
-            if (printDialog.ShowDialog() == true)
-            {
-
-            }
-        }
-
         private void Button_Charisma(object sender, RoutedEventArgs e)
         {
 
@@ -67,6 +58,28 @@ namespace DandD
         private void Button_LVL(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_PDF(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Reset(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ComboBox_CharChange(object sender, SelectionChangedEventArgs e)
+        {
+            switch (CharSelect.SelectedIndex) {
+                case 0: ImageChar.Source = new BitmapImage(new Uri("pack://application:,,,/Reference/charAssasin.png")); break;
+                case 1: ImageChar.Source = new BitmapImage(new Uri("pack://application:,,,/Reference/charMage.png")); break;
+                case 2: ImageChar.Source = new BitmapImage(new Uri("pack://application:,,,/Reference/charHealer.png")); break;
+                case 3: ImageChar.Source = new BitmapImage(new Uri("pack://application:,,,/Reference/charTank.png")); break;
+                case 4: ImageChar.Source = new BitmapImage(new Uri("pack://application:,,,/Reference/charWarrior.png")); break;
+                    default: ImageChar.Source = new BitmapImage(new Uri("pack://application:,,,/Reference/charAssasin.png")); break;
+        }
         }
     }
 }
