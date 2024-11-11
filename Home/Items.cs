@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DandD.Home
+﻿namespace DandD.Home
 {
-    class Items
+    internal class Items
     {
+        int Weapon { get; set; } = 1;
+        int Helmet { get; set; } = 1;
+        int Chest { get; set; } = 1;
+        int Pants { get; set; } = 1;
+        int Boots { get; set; } = 1;
     }
 }

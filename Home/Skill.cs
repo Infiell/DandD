@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DandD.Home
+﻿namespace DandD.Home
 {
-    class Skill
+    internal class Skill
     {
+        double StrengthMult { get; set; }
+        double ConstitutionMukt { get; set; }
+        double DexterityMult { get; set; }
+        double IntelligenceMult { get; set; }
+        double WisdomMult { get; set; }
+        double CharismaMult { get; set; }
     }
 }
