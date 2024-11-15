@@ -41,6 +41,7 @@
         {
             var Stat = new CharPlus();
             var Item = new ItemsChar();
+            var Skill = new SumSkillPoints();
             switch (charac)
             {
                 case 0:
@@ -52,37 +53,97 @@
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill2, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill3, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill4, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill5, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill6, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill7, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill8, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill9, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill10, "Strength", point);
                             case "Constitution": return Stat.AssasinMultConstitution * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill2, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill3, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill4, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill5, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill6, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill7, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill8, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill9, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill10, "Constitution", point);
                             case "Dexterity": return Stat.AssasinMultDexterity * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill2, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill3, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill4, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill5, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill6, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill7, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill8, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill9, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill10, "Dexterity", point);
                             case "Intelligence": return Stat.AssasinMultIntelligence * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill2, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill3, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill4, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill5, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill6, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill7, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill8, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill9, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill10, "Intelligence", point);
                             case "Wisdom": return Stat.AssasinMultWisdom * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill2, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill3, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill4, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill5, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill6, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill7, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill8, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill9, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill10, "Wisdom", point);
                             case "Charisma": return Stat.AssasinMultCharisma * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill2, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill3, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill4, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill5, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill6, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill7, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill8, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill9, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill10, "Charisma", point);
                             default: return point;
                         }
                     };
@@ -95,37 +156,97 @@
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill2, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill3, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill4, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill5, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill6, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill7, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill8, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill9, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill10, "Strength", point);
                             case "Constitution": return Stat.MageMultConstitution * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill2, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill3, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill4, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill5, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill6, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill7, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill8, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill9, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill10, "Constitution", point);
                             case "Dexterity": return Stat.MageMultDexterity * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill2, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill3, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill4, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill5, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill6, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill7, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill8, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill9, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill10, "Dexterity", point);
                             case "Intelligence": return Stat.MageMultIntelligence * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill2, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill3, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill4, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill5, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill6, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill7, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill8, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill9, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill10, "Intelligence", point);
                             case "Wisdom": return Stat.MageMultWisdom * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");  
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill2, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill3, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill4, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill5, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill6, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill7, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill8, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill9, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill10, "Wisdom", point);
                             case "Charisma": return Stat.MageMultWisdom * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill2, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill3, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill4, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill5, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill6, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill7, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill8, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill9, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill10, "Charisma", point); 
                             default: return point;
                         }
                     };
@@ -138,37 +259,97 @@
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill2, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill3, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill4, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill5, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill6, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill7, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill8, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill9, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill10, "Strength", point); 
                             case "Constitution": return Stat.HealerMultConstitution * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill2, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill3, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill4, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill5, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill6, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill7, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill8, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill9, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill10, "Constitution", point); 
                             case "Dexterity": return Stat.HealerMultDexterity * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill2, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill3, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill4, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill5, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill6, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill7, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill8, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill9, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill10, "Dexterity", point);
                             case "Intelligence": return Stat.HealerMultIntelligence * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots") 
+                                    + Skill.SkillCheckPoint(skill1, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill2, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill3, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill4, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill5, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill6, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill7, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill8, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill9, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill10, "Intelligence", point);
                             case "Wisdom": return Stat.HealerMultWisdom * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill2, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill3, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill4, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill5, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill6, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill7, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill8, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill9, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill10, "Wisdom", point);
                             case "Charisma": return Stat.HealerMultCharisma * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill2, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill3, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill4, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill5, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill6, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill7, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill8, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill9, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill10, "Charisma", point);
                             default: return point;  
                         }
                     };
@@ -181,37 +362,97 @@
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill2, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill3, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill4, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill5, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill6, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill7, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill8, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill9, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill10, "Strength", point);
                             case "Constitution": return Stat.TankMultConstitution * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill2, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill3, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill4, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill5, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill6, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill7, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill8, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill9, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill10, "Constitution", point);
                             case "Dexterity": return Stat.TankMultDexterity * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill2, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill3, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill4, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill5, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill6, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill7, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill8, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill9, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill10, "Dexterity", point);
                             case "Intelligence": return Stat.TankMultIntelligence * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill2, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill3, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill4, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill5, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill6, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill7, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill8, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill9, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill10, "Intelligence", point);
                             case "Wisdom": return Stat.TankMultWisdom * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill2, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill3, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill4, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill5, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill6, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill7, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill8, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill9, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill10, "Wisdom", point);
                             case "Charisma": return Stat.TankMultCharisma * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill2, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill3, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill4, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill5, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill6, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill7, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill8, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill9, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill10, "Charisma", point);
                             default: return point;  
                         }
                     };
@@ -224,37 +465,97 @@
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill2, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill3, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill4, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill5, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill6, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill7, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill8, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill9, "Strength", point)
+                                    + Skill.SkillCheckPoint(skill10, "Strength", point);
                             case "Constitution": return Stat.WarriorMultConstitution * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill2, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill3, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill4, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill5, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill6, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill7, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill8, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill9, "Constitution", point)
+                                    + Skill.SkillCheckPoint(skill10, "Constitution", point); 
                             case "Dexterity": return Stat.WarriorMultDexterity * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill2, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill3, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill4, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill5, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill6, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill7, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill8, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill9, "Dexterity", point)
+                                    + Skill.SkillCheckPoint(skill10, "Dexterity", point);
                             case "Intelligence": return Stat.WarriorMultIntelligence * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots") 
+                                    + Skill.SkillCheckPoint(skill1, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill2, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill3, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill4, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill5, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill6, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill7, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill8, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill9, "Intelligence", point)
+                                    + Skill.SkillCheckPoint(skill10, "Intelligence", point);
                             case "Wisdom": return Stat.WarriorMultWisdom * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill2, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill3, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill4, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill5, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill6, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill7, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill8, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill9, "Wisdom", point)
+                                    + Skill.SkillCheckPoint(skill10, "Wisdom", point);
                             case "Charisma": return Stat.WarriorMultCharisma * point
                                     + Item.ItemPointWeapon(point, charWeap, "Weapon")
                                     + Item.ItemPointWeapon(point, charHelmet, "Helmet")
                                     + Item.ItemPointWeapon(point, charChest, "Chest")
                                     + Item.ItemPointWeapon(point, charPants, "Pants")
-                                    + Item.ItemPointWeapon(point, charBoots, "Boots");
+                                    + Item.ItemPointWeapon(point, charBoots, "Boots")
+                                    + Skill.SkillCheckPoint(skill1, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill2, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill3, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill4, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill5, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill6, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill7, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill8, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill9, "Charisma", point)
+                                    + Skill.SkillCheckPoint(skill10, "Charisma", point);
                             default: return point;
                         }
                     };
