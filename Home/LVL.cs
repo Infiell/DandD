@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Windows;
 
 namespace DandD.Home
@@ -13,6 +12,7 @@ namespace DandD.Home
         public int per50LVL { get; set; } = 10;
         public int per100LVL { get; set; } = 20;
         public int point { get; set; } = 1;
+        public int statPerPoint { get; set; } = 1;
     }
 
     internal class PointsGet
@@ -41,21 +41,46 @@ namespace DandD.Home
         {
             var points = new LVL();
             pointCurr += points.point;
-            if (level%10 == 0)
+            if (level % 10 == 0)
             {
-                pointCurr += pointCurr * points.per10LVL;
+                pointCurr += points.per10LVL;
+                if (level % 50 == 0)
+                {
+                    pointCurr += points.per50LVL;
+                    if (level % 100 == 0)
+                    {
+                        pointCurr += points.per100LVL;
+                        return pointCurr;
+                    }
+                    return pointCurr;
+                }
                 return pointCurr;
             }
-            else if (level%50 == 0)
+            return pointCurr;
+        }
+
+        public static int PointCost(int points, int currPoint)
+        {
+            if (points > 0)
             {
-                pointCurr += pointCurr * points.per50LVL;
-                return pointCurr;
+                var point = new LVL().statPerPoint;
+                currPoint += point;
+                return currPoint;
+            } else
+            {
+                MessageBox.Show("Не хватает поинтов для прокачки стата");
+                return currPoint;
             }
-            else if (level%100 == 0)
+        }
+
+        public static int PointSpend(int points)
+        {
+            if (points > 0)
             {
-                pointCurr+= pointCurr * points.per100LVL;
-                return pointCurr;
-            } else return pointCurr;
+                points--;
+                return points;
+            }
+            else { return points; }
         }
     }
 }
