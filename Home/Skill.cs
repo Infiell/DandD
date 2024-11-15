@@ -552,9 +552,9 @@
         public int Skill88 { get; set; } = 1;
     }
 
-    public class SumSkillPoints
+    internal class SumSkillPoints
     {
-        public static int SkillCheckPoint(int skill, string stat, int point)
+        public int SkillCheckPoint(int skill, string stat, int point)
         {
             var StrengthSkills = new SkillStrengthMult();
             var ConstitutionSkills = new SkillConstitutionMult();
@@ -1135,7 +1135,7 @@
                             default: return point;
                         }
                     }
-                    default: return point;
+                default: return point;
             }
         }
     }

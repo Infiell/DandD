@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:DandD"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="D and D" Height="800
-        " Width="1600" Background="{x:Null}" Foreground="{x:Null}" Icon="/Reference/icon.png">
+        Title="D and D" Height="662" Width="1470" Background="{x:Null}" Foreground="{x:Null}" Icon="/Reference/icon.png">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -15,20 +14,10 @@
                 <GradientStop Color="#FFB98B8B" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Image Margin="36,10,36,665" Source="/Reference/logo.png"/>
-        <Image Margin="37,124,1333,291" Source="/Reference/charAssasin.png" Stretch="Fill" Name="ImageChar"/>
+        <Image Margin="92,10,108,563" Source="/Reference/logo.png"/>
+        <Image Margin="37,124,1177,32" Source="/Reference/charAssasin.png" Stretch="Fill" Name="ImageChar"/>
         <Label Content="Character LVL" HorizontalAlignment="Left" Margin="537,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Margin="575,156,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="76" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Name="LevelText" IsReadOnly="True"/>
-        <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,524,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FFFF0B0B" LargeChange="0" Value="15"/>
-        <Label Content="HP" HorizontalAlignment="Left" Margin="135,498,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <Label Content="Manapul" HorizontalAlignment="Left" Margin="107,552,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,578,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FF1B6BB5" LargeChange="0" Value="15"/>
-        <Label Content="Stamina" HorizontalAlignment="Left" Margin="107,606,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,632,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FF1BB53A" LargeChange="0" Value="15"/>
-        <Label Content="15/100" HorizontalAlignment="Left" Margin="112,521,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <Label Content="15/100" HorizontalAlignment="Left" Margin="112,575,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <Label Content="15/100" HorizontalAlignment="Left" Margin="112,630,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <Button Content="Import to PDF" HorizontalAlignment="Left" Margin="10,728,0,0" VerticalAlignment="Top" Height="25" Width="96" Background="White" BorderBrush="#FF080000" FontFamily="EuropeExt" FontSize="10" Click="Button_PDF"/>
         <Label Content="Strength" HorizontalAlignment="Left" Margin="400,178,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
         <Label Content="Constitution" HorizontalAlignment="Left" Margin="400,209,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
         <Label Content="Dexterity" HorizontalAlignment="Left" Margin="400,240,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
@@ -51,22 +40,21 @@
         <Button Content="+" HorizontalAlignment="Left" Margin="645,178,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Strength" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="645,150,0,0" VerticalAlignment="Top" Height="23" Width="28" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_LVL" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
         <Button Content="Reset" HorizontalAlignment="Left" Margin="400,126,0,0" VerticalAlignment="Top" Height="25" Width="96" Background="White" BorderBrush="#FF080000" FontFamily="EuropeExt" FontSize="10" Click="Button_Reset"/>
-        <ComboBox HorizontalAlignment="Left" Margin="37,97,0,0" VerticalAlignment="Top" Width="230" FontFamily="EuropeExt" Background="{x:Null}" Text="Assasin" SelectedIndex="0" SelectionChanged="ComboBox_CharChange" Name="CharSelect">
+        <ComboBox HorizontalAlignment="Left" Margin="37,97,0,0" VerticalAlignment="Top" Width="256" FontFamily="EuropeExt" Background="{x:Null}" Text="Assasin" SelectedIndex="0" SelectionChanged="ComboBox_CharChange" Name="CharSelect">
             <ListViewItem Content="Assasin" Background="#FFFF8B8B"/>
             <ListViewItem Content="Mage" Background="#FF3FBED6"/>
             <ListViewItem Content="Healer" Background="#FF43E681"/>
             <ListViewItem Content="Tank" Background="#FFCEDC52"/>
             <ListViewItem Content="Warrior" Background="#FF6864F1"/>
         </ComboBox>
-        <Rectangle HorizontalAlignment="Left" Height="348" Margin="400,392,0,0" Stroke="Black" VerticalAlignment="Top" Width="604"/>
-        <Rectangle HorizontalAlignment="Left" Height="548" Margin="1047,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="543"/>
+        <Rectangle HorizontalAlignment="Left" Height="222" Margin="400,392,0,0" Stroke="Black" VerticalAlignment="Top" Width="604"/>
+        <Rectangle HorizontalAlignment="Left" Height="422" Margin="1047,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="387"/>
         <Label Content="Inventory" HorizontalAlignment="Left" Margin="401,392,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Weapon" HorizontalAlignment="Left" Margin="401,440,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Helmet" HorizontalAlignment="Left" Margin="401,471,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Chest" HorizontalAlignment="Left" Margin="401,502,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Pants" HorizontalAlignment="Left" Margin="401,533,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Boots" HorizontalAlignment="Left" Margin="401,564,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
-        <Label Content="Stats" HorizontalAlignment="Left" Margin="401,606,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,440,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt" Name="Weapon">
             <ListViewItem Content="FrozenChair" Background="#FFFF8B8B"/>
             <ListViewItem Content="SlowVisibleTesk" Background="#FFFF8B8B"/>
@@ -132,11 +120,6 @@
             <ListViewItem Content="GFaOpow" Background="#FF3FBED6"/>
             <ListViewItem Content="Vkayetu" Background="#FFCEDC52"/>
         </ComboBox>
-        <Label Content="1" HorizontalAlignment="Left" Margin="401,632,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" Name="StatWeapon"/>
-        <Label Content="2" HorizontalAlignment="Left" Margin="401,658,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" Name="StatHelmet"/>
-        <Label Content="3" HorizontalAlignment="Left" Margin="401,684,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" Name="StatChest"/>
-        <Label Content="4" HorizontalAlignment="Left" Margin="676,632,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" Name="StatPants"/>
-        <Label Content="5" HorizontalAlignment="Left" Margin="676,658,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" Name="StatBoots"/>
         <Label Content="Skills" HorizontalAlignment="Left" Margin="1049,193,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="1" HorizontalAlignment="Left" Margin="1047,252,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="59"/>
         <Label Content="2" HorizontalAlignment="Left" Margin="1047,283,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="59"/>
@@ -149,8 +132,8 @@
         <Label Content="9" HorizontalAlignment="Left" Margin="1047,495,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="59"/>
         <Label Content="10" HorizontalAlignment="Left" Margin="1047,526,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="59"/>
         <Label Content="Power" HorizontalAlignment="Left" Margin="904,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="874,155,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True"/>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,252,0,0" VerticalAlignment="Top" Width="312">
+        <TextBox HorizontalAlignment="Left" Margin="874,155,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="PowerText"/>
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,252,0,0" VerticalAlignment="Top" Width="312" Name="Skill1">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -240,7 +223,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,284,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,284,0,0" VerticalAlignment="Top" Width="312" Name="Skill2">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -330,7 +313,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,315,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,315,0,0" VerticalAlignment="Top" Width="312" Name="Skill3">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -420,7 +403,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,345,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,345,0,0" VerticalAlignment="Top" Width="312" Name="Skill4">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -510,7 +493,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,376,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,376,0,0" VerticalAlignment="Top" Width="312" Name="Skill5">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -600,7 +583,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,407,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,407,0,0" VerticalAlignment="Top" Width="312" Name="Skill6">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -690,7 +673,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,438,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,438,0,0" VerticalAlignment="Top" Width="312" Name="Skill7">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -780,7 +763,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,468,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,468,0,0" VerticalAlignment="Top" Width="312" Name="Skill8">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -870,7 +853,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,496,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,496,0,0" VerticalAlignment="Top" Width="312" Name="Skill9">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -960,7 +943,7 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,527,0,0" VerticalAlignment="Top" Width="312">
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="1085,527,0,0" VerticalAlignment="Top" Width="312" Name="Skill10">
             <ListViewItem Content="FireCharmKOla" Background="#FF43E681"/>
             <ListViewItem Content="GajaBanga" Background="#FF6864F1"/>
             <ListViewItem Content="Uiopak" Background="#FF6864F1"/>
@@ -1050,7 +1033,6 @@
             <ListViewItem Content="MmeYueuii" Background="#FF3FBED6"/>
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
-        <Label Content="5" HorizontalAlignment="Left" Margin="676,684,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" x:Name="StatBoots_Copy"/>
         <TextBox HorizontalAlignment="Left" Margin="336,183,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="StrengthTextHide" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Margin="336,212,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="ConstitutionTextHide" IsEnabled="False"/>
         <TextBox HorizontalAlignment="Left" Margin="336,243,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="DexterityTextHide" IsEnabled="False"/>

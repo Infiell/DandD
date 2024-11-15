@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace DandD.Home
+﻿namespace DandD.Home
 {
     internal class Items
     {
