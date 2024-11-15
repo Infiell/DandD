@@ -18,7 +18,7 @@
         <Image Margin="36,10,36,665" Source="/Reference/logo.png"/>
         <Image Margin="37,124,1333,291" Source="/Reference/charAssasin.png" Stretch="Fill" Name="ImageChar"/>
         <Label Content="Character LVL" HorizontalAlignment="Left" Margin="537,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="575,156,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="76" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Name="LevelText"/>
+        <TextBox HorizontalAlignment="Left" Margin="575,156,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="76" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Name="LevelText" IsReadOnly="True"/>
         <ProgressBar HorizontalAlignment="Left" Height="23" Margin="37,524,0,0" VerticalAlignment="Top" Width="230" BorderBrush="Black" Foreground="#FFFF0B0B" LargeChange="0" Value="15"/>
         <Label Content="HP" HorizontalAlignment="Left" Margin="135,498,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
         <Label Content="Manapul" HorizontalAlignment="Left" Margin="107,552,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
@@ -35,12 +35,12 @@
         <Label Content="Intelligence" HorizontalAlignment="Left" Margin="400,271,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
         <Label Content="Wisdom" HorizontalAlignment="Left" Margin="400,302,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
         <Label Content="Charisma" HorizontalAlignment="Left" Margin="400,333,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="581,181,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Margin="581,211,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Margin="581,242,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Margin="581,273,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Margin="581,304,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Left" Margin="581,333,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,181,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="StrengthText"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,211,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="ConstitutionText"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,242,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="DexterityText"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,273,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="IntelligenceText"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,304,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="WisdomText"/>
+        <TextBox HorizontalAlignment="Left" Margin="581,333,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="CharismaText"/>
         <TextBox HorizontalAlignment="Left" Margin="712,150,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="78" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" Name="PointsText"/>
         <Label Content="Points" HorizontalAlignment="Left" Margin="714,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="74"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="645,327,0,0" VerticalAlignment="Top" Height="23" Width="29" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="EuropeExt" FontSize="20" Click="Button_Charisma" Foreground="White" Grid.ColumnSpan="1" FontWeight="Bold"/>
@@ -67,7 +67,7 @@
         <Label Content="Pants" HorizontalAlignment="Left" Margin="401,533,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Boots" HorizontalAlignment="Left" Margin="401,564,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
         <Label Content="Stats" HorizontalAlignment="Left" Margin="401,606,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114"/>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,440,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt">
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,440,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt" Name="Weapon">
             <ListViewItem Content="FrozenChair" Background="#FFFF8B8B"/>
             <ListViewItem Content="SlowVisibleTesk" Background="#FFFF8B8B"/>
             <ListViewItem Content="ShadowUiHuy" Background="#FF3FBED6"/>
@@ -80,7 +80,7 @@
             <ListViewItem Content="LootEpicOp" Background="#FF6864F1"/>
             <ListViewItem Content="GadhEyOE" Background="#FF43E681"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,471,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt">
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,471,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt" Name="Helmet">
             <ListViewItem Content="GayTyeElov" Background="#FFFF8B8B"/>
             <ListViewItem Content="LoKEring" Background="#FF3FBED6"/>
             <ListViewItem Content="HitToPause" Background="#FF43E681"/>
@@ -93,7 +93,7 @@
             <ListViewItem Content="DamaKorea" Background="#FFCEDC52"/>
             <ListViewItem Content="LopaSkAdi" Background="#FFFF8B8B"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,502,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt">
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,502,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt" Name="Chest">
             <ListViewItem Content="DeABol" Background="#FFCEDC52"/>
             <ListViewItem Content="LakmYPasK" Background="#FFCEDC52"/>
             <ListViewItem Content="LafkaIUYanji" Background="#FFFF8B8B"/>
@@ -106,7 +106,7 @@
             <ListViewItem Content="Vasiko" Background="#FF6864F1"/>
             <ListViewItem Content="Traktorist" Background="#FF6864F1"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,534,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt">
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,534,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt" Name="Pants">
             <ListViewItem Content="YeartYa" Background="#FF6864F1"/>
             <ListViewItem Content="rtTeygarak" Background="#FF43E681"/>
             <ListViewItem Content="MazzIuu" Background="#FF43E681"/>
@@ -119,7 +119,7 @@
             <ListViewItem Content="JaeIIU" Background="#FFFF8B8B"/>
             <ListViewItem Content="IrerhEwa" Background="#FF3FBED6"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,565,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt">
+        <ComboBox HorizontalAlignment="Left" Height="26" Margin="520,565,0,0" VerticalAlignment="Top" Width="414" FontFamily="EuropeExt" Name="Boots">
             <ListViewItem Content="GadreSpe" Background="#FF43E681"/>
             <ListViewItem Content="BdaerREy" Background="#FF6864F1"/>
             <ListViewItem Content="CVaeIPAeo" Background="#FF6864F1"/>
@@ -1051,5 +1051,12 @@
             <ListViewItem Content="Nabeuuu" Background="#FFCEDC52"/>
         </ComboBox>
         <Label Content="5" HorizontalAlignment="Left" Margin="676,684,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="EuropeExt" FontSize="15" FontWeight="Bold" Width="114" x:Name="StatBoots_Copy"/>
+        <TextBox HorizontalAlignment="Left" Margin="336,183,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="StrengthTextHide" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="336,212,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="ConstitutionTextHide" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="336,243,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="DexterityTextHide" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="336,274,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="IntelligenceTextHide" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="336,304,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="WisdomTextHide" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="336,333,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="64" FontSize="15" FontFamily="EuropeExt" Height="23" TextAlignment="Center" Background="{x:Null}" Foreground="White" SelectionBrush="#FFD26363" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" IsReadOnly="True" x:Name="CharismaTextHide" IsEnabled="False"/>
+        <Button Content="+" HorizontalAlignment="Left" Height="27" Margin="354,132,0,0" VerticalAlignment="Top" Width="28" Click="ButtonHide"/>
     </Grid>
 </Window>
